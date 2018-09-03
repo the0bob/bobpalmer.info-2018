@@ -4,7 +4,7 @@
          "faIcon":"fa-file-code-o",
          "name":"Languages",
          "items":[
-            "Node.js",
+            "Node.js / JSX",
             "PHP",
             "C++"
          ]
@@ -13,8 +13,8 @@
          "faIcon":"fa-stack-overflow",
          "name":"Stacks",
          "items":[
+            "MERN / MEAN",
             "LAMP",
-            "MEAN",
             ".NET"
          ]
       },

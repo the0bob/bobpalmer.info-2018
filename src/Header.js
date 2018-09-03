@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollableAnchor from 'react-scrollable-anchor';
 import Constants from './constants';
 
 export default function() {
@@ -16,13 +17,15 @@ export default function() {
     'backgroundAttachment': 'fixed',
   }
   return (
-    <header className="header" style={style}>
-      <div className="text-vertical-center">
-        <h1>I'm Bob</h1>
-        <h3>Full Stack Developer</h3>
-        <br />
-        <a href="#about" className="btn btn-dark btn-lg js-scroll-trigger">Learn More</a>
-      </div>
-    </header>
+    <ScrollableAnchor id="top">
+      <header className="header" style={style}>
+        <div className="text-vertical-center">
+          <h1>I'm Bob</h1>
+          <h3>Full Stack Developer</h3>
+          <br />
+          <a href="#aboutScroll" className="btn btn-dark btn-lg">Learn More</a>
+        </div>
+      </header>
+    </ScrollableAnchor>
   );
 }

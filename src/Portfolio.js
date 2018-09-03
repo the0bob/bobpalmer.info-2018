@@ -1,37 +1,84 @@
 import React from 'react';
 import ScrollableAnchor from 'react-scrollable-anchor';
+import Slider from "react-slick";
 import { OutLink } from './BUI';
 import portfolioObj from './data/portfolio.json';
 
 function PortfolioItem(props) {
+  const background = `url(${props.img}) no-repeat center center`
   return (
-    <div className="col-lg-4 col-md-6">
-      <div className="portfolio-item">
-        <OutLink href={props.link}>
-          <div className="img-portfolio">
-            <img src={props.img} alt={props.title} />
-          </div>
+    <div className="portfolio-item">
+      <OutLink href={props.link}>
+        <div className="img-portfolio" style={{
+          background: background,
+          backgroundSize: 'cover',
+          width: '100%',
+          height: '240px',
+        }}>
           <h4>{props.title}</h4>
-        </OutLink>
-        <div className="copy-portfolio">{props.copy}</div>
-        <div className="cta-portfolio">
-          <OutLink href={props.link}>
-            <button className="btn btn-dark">{props.cta}</button>
-          </OutLink>
         </div>
+      </OutLink>
+      <div className="copy-portfolio" dangerouslySetInnerHTML={{__html: props.copy}}></div>
+      <div className="cta-portfolio">
+        <OutLink href={props.link}>
+          <button className="btn btn-dark">{props.cta}</button>
+        </OutLink>
       </div>
     </div>
   );
 }
 
 function PortfolioItems(props) {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    centerMode: true,
+    centerPadding: '320px',
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    className: 'portfolio-items',
+    responsive: [
+      {
+        breakpoint: 1400,
+        settings: {
+          centerPadding: '240px',
+          slidesToShow: 1,
+        }
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          centerPadding: '30px',
+          slidesToShow: 1,
+        }
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          centerPadding: '15px',
+          slidesToShow: 1,
+        }
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          centerPadding: '0',
+          slidesToShow: 1,
+        }
+      },
+    ],
+  };
   return (
-    <div className="row">
+    <Slider {...settings}>
       {props.portfolio.map((portfolioItem, index) => (
         <PortfolioItem key={index} {...portfolioItem}/>
       ))}
-    </div>
-  );
+    </Slider>
+    );
 }
 
 export default function() {

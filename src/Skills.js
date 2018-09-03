@@ -39,7 +39,7 @@ function SkillGroups(props) {
 export default function() {
   return (
     <ScrollableAnchor id="skills">
-      <section id="skills" className="skills text-white">
+      <section className="skills text-white">
         <div className="container">
           <div className="row text-center">
             <div className="col-lg-12 mx-auto">

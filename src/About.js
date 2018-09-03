@@ -33,10 +33,10 @@ function CtaButtons() {
     <div className="text-center">
       <div className="row">
         <div className="col-md-6">
-          <CtaButton href="#portfolio">See Portfolio</CtaButton>
+          <CtaButton href="#portfolioScroll">See Portfolio</CtaButton>
         </div>
         <div className="col-md-6">
-          <CtaButton href="#contact">Contact Me</CtaButton>
+          <CtaButton href="#contactScroll">Contact Me</CtaButton>
         </div>
       </div>
     </div>

@@ -1,0 +1,58 @@
+{
+   "skills":[
+      {
+         "faIcon":"fa-file-code-o",
+         "name":"Languages",
+         "items":[
+            "Node.js",
+            "PHP",
+            "C++"
+         ]
+      },
+      {
+         "faIcon":"fa-stack-overflow",
+         "name":"Stacks",
+         "items":[
+            "LAMP",
+            "MEAN",
+            ".NET"
+         ]
+      },
+      {
+         "faIcon":"fa-tasks",
+         "name":"Automation",
+         "items":[
+            "Backups",
+            "Data Feeds",
+            "Cron Jobs"
+         ]
+      },
+      {
+         "faIcon":"fa-puzzle-piece",
+         "name":"Integration",
+         "items":[
+            "REST APIs",
+            "Data Mapping",
+            "Mutation & Validation"
+         ]
+      },
+      {
+         "faIcon":"fa-database",
+         "name":"Data Structs",
+         "items":[
+            "XML",
+            "JSON / NoSQL",
+            "SQL / Relational"
+         ]
+      },
+      {
+         "faIcon":"fa-code-fork",
+         "name":"Other Skills",
+         "items":[
+            "Git / Gitlab",
+            "Bootstrap",
+            "SEO / SMO"
+         ]
+      }
+   ]
+}

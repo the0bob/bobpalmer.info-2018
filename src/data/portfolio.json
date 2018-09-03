@@ -1,0 +1,46 @@
+{
+  "portfolio": [
+    {
+      "title": "Canvas Image Panner in a Modal",
+      "img": "https://s3.us-east-2.amazonaws.com/bob-palmer-website/img/portfolio/modal-image-panner.jpg",
+      "copy": "<p>I was pretty disappointed to find out that there was no open-source version of this functionality. So, I set aside a weekend to make it happen. The interface is completely styled through CSS, so a designer could customize this.</p><p>To implement this on sites with other fixed position elements, the modal content must have a higher z-index than other elements on the page.</p>",
+      "link": "http://codepen.io/the0bob/full/ObpgXy/",
+      "cta": "View"
+    },
+    {
+      "title": "Kansas City Food Not Bombs",
+      "img": "https://s3.us-east-2.amazonaws.com/bob-palmer-website/img/portfolio/kcfnb.jpg",
+      "copy": "<p>A website for the local Food Not Bombs chapter in Kansas City. They serve free hot meals and distribute groceries and clothing to anyone in need every Sunday. This site utilizes the Google Maps API and a PHP contact form, as well as some moderate CSS3 for a simple, clean layout. It is built on a custom LAMP stack which utilizes <a href='http://www.webmin.com/' target='_blank'>Webmin</a> for server administration on top of <a href='https://www.ubuntu.com/download/server' target='_blank'>Ubuntu</a>.</p>",
+      "link": "http://www.kcfnb.org/",
+      "cta": "View"
+    },
+    {
+      "title": "Weather Widget",
+      "img": "https://s3.us-east-2.amazonaws.com/bob-palmer-website/img/portfolio/weather.jpg",
+      "copy": "<p>A basic weather widget I created on Codepen using Angular,  Bootstrap, and the OpenWeatherMap API. It shows the current weather conditions in Rosedale, KS.</p>",
+      "link": "https://codepen.io/the0bob/pen/KZJJLv",
+      "cta": "View"
+    },
+    {
+      "title": "Employee Database",
+      "img": "https://s3.us-east-2.amazonaws.com/bob-palmer-website/img/portfolio/empdb.jpg",
+      "copy": "<p>A database I designed in Microsoft Access for Applied Database Management at <a href='http://park.edu/' target='_blank'>Park University</a>. Documentation is included. Primary and Foreign keys are assigned properly, cross-reference tables are utilized, and a variety of data types are used.</p>",
+      "link": "https://s3.us-east-2.amazonaws.com/bob-palmer-website/downloads/bob_palmer_employee_database-1.zip",
+      "cta": "Download"
+    },
+    {
+      "title": "Action RPG",
+      "img": "https://s3.us-east-2.amazonaws.com/bob-palmer-website/img/portfolio/arpgdemo.jpg",
+      "copy": "<p>The collision detection, the auto-tiling, and physics are meant to mimic <a href='http://zeldawiki.org/The_Legend_of_Zelda_(Game)' target='_blank'>The Legend of Zelda</a>. Source code included.</p><p>Note: To run this game, you will need to install the XNA Run Time. Just unzip the file, and run “xnafx40_redist.msi”. Then, run “WindowsGame1.exe”. Move with the arrow keys.</p>",
+      "link": "https://s3.us-east-2.amazonaws.com/bob-palmer-website/downloads/bob_palmer_csh_windowsgame1-1.zip",
+      "cta": "Download"
+    },
+    {
+      "title": "Pong",
+      "img": "https://s3.us-east-2.amazonaws.com/bob-palmer-website/img/portfolio/pong.jpg",
+      "copy": "<p>One of the first programs I wrote in C#. Source code included.</p><p>Note: To run this game, you will need to install the XNA Run Time. Just unzip the file, and run “xnafx40_redist.msi”. Then, run “Pong.exe”. Player 1: W/S. Player 2: Up/Down Arrows.</p>",
+      "link": "https://s3.us-east-2.amazonaws.com/bob-palmer-website/downloads/bob_palmer_csh_pong-1.zip",
+      "cta": "Download"
+    }
+  ]
+}

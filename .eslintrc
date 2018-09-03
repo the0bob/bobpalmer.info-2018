@@ -1,0 +1,18 @@
+{
+  "extends": "airbnb-base",
+  "plugins": [
+    "jest"
+  ],
+  "rules": {
+    "no-console": ["error", { "allow": ["warn", "error"] }],
+    "camelcase": "off",
+    "no-underscore-dangle": "off",
+    "newline-per-chained-call": ["error", { "ignoreChainWithDepth": 2 }],
+    "class-methods-use-this": "off",
+    "no-await-in-loop": "off"
+  },
+  "env": {
+    "browser": true,
+    "jest/globals": true
+  }
+}

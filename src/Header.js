@@ -1,0 +1,28 @@
+import React from 'react';
+import Constants from './constants';
+
+export default function() {
+  const style={
+    'position': 'relative',
+    'display': 'table',
+    'width': '100%',
+    'height': '100%',
+    'backgroundColor': '#333',
+    'background': `url(${Constants.cdnUrl}img/photo_bg-1-1.jpg) no-repeat center center scroll`,
+    'WebkitBackgroundSize': 'cover',
+    'MozBackgroundSize': 'cover',
+    'OBackgroundSize': 'cover',
+    'backgroundSize': 'cover',
+    'backgroundAttachment': 'fixed',
+  }
+  return (
+    <header className="header" style={style}>
+      <div className="text-vertical-center">
+        <h1>I'm Bob</h1>
+        <h3>Full Stack Developer</h3>
+        <br />
+        <a href="#about" className="btn btn-dark btn-lg js-scroll-trigger">Learn More</a>
+      </div>
+    </header>
+  );
+}

@@ -1,0 +1,22 @@
+{
+  "name": "bobpalmer.info-2018",
+  "version": "0.1.0",
+  "description": "Personal Website for Bob Palmer",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.18.0",
+    "jsonfile": "^4.0.0",
+    "lodash": "^4.17.10",
+    "react": "^16.4.2",
+    "react-bootstrap": "^0.32.3",
+    "react-dom": "^16.4.2",
+    "react-scripts": "1.1.5",
+    "react-scrollable-anchor": "^0.6.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

@@ -20,6 +20,11 @@ export default function() {
                     <i className="fa fa-github fa-fw fa-3x text-primary"></i>
                   </OutLink>
                 </li>
+                <li className="list-inline-item">
+                  <OutLink href="https://www.facebook.com/bntrain">
+                    <i className="fa fa-facebook fa-fw fa-3x text-primary"></i>
+                  </OutLink>
+                </li>
               </ul>
               <hr className="small" />
               <p className="text-muted">Copyright &copy; Bob Jobs, LLC 2017</p>

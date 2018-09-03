@@ -23,7 +23,7 @@ export default function() {
           <h1>I'm Bob</h1>
           <h3>Full Stack Developer</h3>
           <br />
-          <a href="#aboutScroll" className="btn btn-dark btn-lg">Learn More</a>
+          <a href="#about" className="btn btn-dark btn-lg">Learn More</a>
         </div>
       </header>
     </ScrollableAnchor>

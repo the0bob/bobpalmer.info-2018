@@ -165,8 +165,8 @@ color: #000;
   left: 0; right: 0;
   top: 0; bottom: 0;
   background-image:
-    linear-gradient(to right, #fff, rgba(255,255,255,0) calc(50% - 120px)),
-    linear-gradient(to left , #fff, rgba(255,255,255,0) calc(50% - 120px));
+    linear-gradient(to right, #fff, rgba(255,255,255,0) calc(33% - 120px)),
+    linear-gradient(to left , #fff, rgba(255,255,255,0) calc(33% - 120px));
 }
 .portfolio-item {
     display: block;

@@ -1,17 +1,7 @@
 import React from 'react';
-import ScrollableAnchor from 'react-scrollable-anchor';
-import Constants from './constants';
-import { OutLink, CtaButton } from './BUI';
+import { OutLink } from '../BUI/';
 
-
-function AboutImg() {
-  const src = `${Constants.cdnUrl}img/profile3-1.jpg`;
-  return (
-    <img className="about-image" src={src} alt="About Me" />
-  );
-};
-
-function AboutText() {
+export default function() {
   return (
     <div>
       <p className="lead">
@@ -25,40 +15,5 @@ function AboutText() {
       </p>
       <div className="clearfix"></div>
     </div>
-  );
-}
-
-function CtaButtons() {
-  return (
-    <div className="text-center">
-      <div className="row">
-        <div className="col-md-6">
-          <CtaButton href="#portfolio">See Portfolio</CtaButton>
-        </div>
-        <div className="col-md-6">
-          <CtaButton href="#contact">Contact Me</CtaButton>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-export default function() {
-  return (
-    <ScrollableAnchor id="about">
-      <section className="about">
-        <div className="container text-center">
-          <div className="row">
-            <div className="col-md-4">
-              <AboutImg />
-            </div>
-            <div className="col-md-8">
-              <AboutText />
-              <CtaButtons />
-            </div>
-          </div>
-        </div>
-      </section>
-    </ScrollableAnchor>
   );
 }

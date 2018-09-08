@@ -6,13 +6,13 @@ import { configureAnchors } from 'react-scrollable-anchor'
 import registerServiceWorker from './registerServiceWorker';
 import './styles/default.css';
 import './styles/burger-menu.css';
-import { Spacer } from './BUI';
-import Header from './Header';
-import About from './About';
-import Skills from './Skills';
-import Portfolio from './Portfolio';
-import Contact from './Contact';
-import Footer from './Footer';
+import { Spacer } from './BUI/';
+import Header from './Header/';
+import About from './About/';
+import Skills from './Skills/';
+import Portfolio from './Portfolio/';
+import Contact from './Contact/';
+import Footer from './Footer/';
 
 configureAnchors({offset: -60, scrollDuration: 200})
 

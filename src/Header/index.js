@@ -1,6 +1,7 @@
 import React from 'react';
 import ScrollableAnchor from 'react-scrollable-anchor';
-import Constants from './constants';
+import Constants from '../data/constants.json';
+import { MainOutLinks } from '../BUI/';
 
 export default function() {
   const style={
@@ -22,6 +23,8 @@ export default function() {
         <div className="text-vertical-center">
           <h1>I'm Bob</h1>
           <h3>Full Stack Developer</h3>
+          <br />
+          <MainOutLinks color="white" />
           <br />
           <a href="#about" className="btn btn-dark btn-lg">Learn More</a>
         </div>

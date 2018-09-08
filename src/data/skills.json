@@ -1,7 +1,7 @@
 {
    "skills":[
       {
-         "faIcon":"fa-file-code-o",
+         "faIcon":"far fa-file-code",
          "name":"Languages",
          "items":[
             "Node.js / JSX",
@@ -10,7 +10,7 @@
          ]
       },
       {
-         "faIcon":"fa-stack-overflow",
+         "faIcon":"fab fa-stack-overflow",
          "name":"Stacks",
          "items":[
             "MERN / MEAN",
@@ -19,7 +19,7 @@
          ]
       },
       {
-         "faIcon":"fa-tasks",
+         "faIcon":"fas fa-tasks",
          "name":"Automation",
          "items":[
             "Backups",
@@ -28,7 +28,7 @@
          ]
       },
       {
-         "faIcon":"fa-puzzle-piece",
+         "faIcon":"fas fa-puzzle-piece",
          "name":"Integration",
          "items":[
             "REST APIs",
@@ -37,7 +37,7 @@
          ]
       },
       {
-         "faIcon":"fa-database",
+         "faIcon":"fas fa-database",
          "name":"Data Structs",
          "items":[
             "XML",
@@ -46,7 +46,7 @@
          ]
       },
       {
-         "faIcon":"fa-code-fork",
+         "faIcon":"fas fa-code-branch",
          "name":"Other Skills",
          "items":[
             "Git / Gitlab",

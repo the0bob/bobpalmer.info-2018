@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function(props) {
-  const favIconClasses = `fa ${props.faIcon} fa-stack-1x`;
+  const favIconClasses = `${props.faIcon} fa-stack-1x`;
   return (
     <div className="col-lg-2 col-md-4 col-sm-4 col-xs-6">
       <div className="skill">

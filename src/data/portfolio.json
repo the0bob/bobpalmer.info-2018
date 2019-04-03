@@ -4,14 +4,14 @@
       "title": "Resume",
       "img": "https://s3.us-east-2.amazonaws.com/bob-palmer-website/img/portfolio/bob-resume.jpg",
       "copy": "<p>It's a resume; not too much to explain here. If you're curious about my work history or just need a piece of paper to keep on file, this is what you are looking for. </p>",
-      "link": "https://s3.us-east-2.amazonaws.com/bob-palmer-website/downloads/Bob-Palmer-Resume-Online.pdf",
+      "link": "https://s3.us-east-2.amazonaws.com/bob-palmer-website/downloads/bob-palmer-web-resume.pdf",
       "cta": "Download"
     },
     {
       "title": "Kansas City Food Not Bombs",
       "img": "https://s3.us-east-2.amazonaws.com/bob-palmer-website/img/portfolio/kcfnb.jpg",
       "copy": "<p>A website for the local Food Not Bombs chapter in Kansas City. They serve free hot meals and distribute groceries and clothing to anyone in need every Sunday. This site is written in Angular 1 and utilizes the Google Maps API, a contact form which POSTs to Zapier, and some moderate CSS3 for a simple, clean layout.</p>",
-      "link": "https://www.kcfnb.org/",
+      "link": "https://kcfnb.org/",
       "cta": "View"
     },
     {

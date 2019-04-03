@@ -4,7 +4,7 @@
          "faIcon":"far fa-file-code",
          "name":"Languages",
          "items":[
-            "Node.js / JSX",
+            "Node.js",
             "PHP",
             "C++"
          ]
@@ -13,7 +13,7 @@
          "faIcon":"fab fa-stack-overflow",
          "name":"Stacks",
          "items":[
-            "MERN / MEAN",
+            "ME*N",
             "LAMP",
             ".NET"
          ]
@@ -31,8 +31,8 @@
          "faIcon":"fas fa-puzzle-piece",
          "name":"Integration",
          "items":[
-            "REST APIs",
-            "Data Mapping",
+            "APIs",
+            "Micro-services",
             "Mutation & Validation"
          ]
       },
@@ -40,9 +40,9 @@
          "faIcon":"fas fa-database",
          "name":"Data Structs",
          "items":[
-            "XML",
+            "SQL",
             "JSON / NoSQL",
-            "SQL / Relational"
+            "XML"
          ]
       },
       {

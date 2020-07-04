@@ -6,6 +6,7 @@
          "items":[
             "Node.js",
             "PHP",
+            "Java",
             "C++"
          ]
       },
@@ -13,9 +14,10 @@
          "faIcon":"fab fa-stack-overflow",
          "name":"Stacks",
          "items":[
-            "ME*N",
+            "MERN",
             "LAMP",
-            ".NET"
+            ".NET",
+            "SpringBoot"
          ]
       },
       {
@@ -41,7 +43,7 @@
          "name":"Data Structs",
          "items":[
             "SQL",
-            "JSON / NoSQL",
+            "NoSQL",
             "XML"
          ]
       },

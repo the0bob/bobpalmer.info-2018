@@ -35,7 +35,7 @@ header .content {
 }
 
 header .content {
-    margin-bottom: 128px;
+    padding-bottom: 128px;
 }
 
 .text-vertical-center {

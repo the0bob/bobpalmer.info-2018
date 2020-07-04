@@ -101,7 +101,7 @@ header {
     width: 100%;
     height: 100%;
     background-color: #333;
-    background: url(https://s3.us-east-2.amazonaws.com/bob-palmer-website/img/photo_bg-1-1.jpg) no-repeat center center scroll;
+    background: url(/img/header.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -110,7 +110,8 @@ header {
 }
 
 .code-background {
-  background: url(https://s3.us-east-2.amazonaws.com/bob-palmer-website/img/background-1.jpg) no-repeat center center scroll;
+  /* https://www.wallpaperflare.com/programming-code-abstract-screen-of-software-developer-coder-wallpaper-enjhi */
+  background: url(/img/background.jpg) no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

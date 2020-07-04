@@ -34,6 +34,7 @@ export default class Contact extends React.Component {
   dismissAlert(i){
 
   }
+  
   async submitForm(event) { try {
     this.setState({...this.state, formDisabled: true});
     this.forceUpdate();
@@ -50,9 +51,12 @@ export default class Contact extends React.Component {
       method: 'POST',
       data: formData,
       headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+    }).then(response => {
+      this.setState({...this.state, formSubmitted: true});
+      this.forceUpdate();
+      return response;
     });
-    this.setState({...this.state, formSubmitted: true});
-    this.forceUpdate();
+
     return response;
   } catch(error) { this.handleError(error) }}
 

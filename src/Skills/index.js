@@ -1,6 +1,6 @@
 import React from 'react';
 import ScrollableAnchor from 'react-scrollable-anchor';
-import { skills } from '../data/skills.json';
+import { skills } from './data.json';
 
 function SkillGroup({faIcon, name, items}) {
   const favIconClasses = `${faIcon} fa-stack-1x`;
@@ -18,7 +18,7 @@ function SkillGroup({faIcon, name, items}) {
         </h4>
         <ul>
           {items.map((skill, index) => (
-            <li key={index}>{skill}</li>
+            <li key={index} dangerouslySetInnerHTML={{__html: skill}} />
           ))}
         </ul>
       </div>

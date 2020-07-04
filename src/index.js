@@ -1,11 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import ReactBootstrap from 'react-bootstrap';
 import { stack as Menu } from 'react-burger-menu';
 import { configureAnchors } from 'react-scrollable-anchor'
+
 import registerServiceWorker from './registerServiceWorker';
-import './styles/default.css';
-import './styles/burger-menu.css';
 import { Spacer } from './BUI/';
 import Header from './Header/';
 import About from './About/';
@@ -14,9 +12,19 @@ import Portfolio from './Portfolio/';
 import Contact from './Contact/';
 import Footer from './Footer/';
 
-configureAnchors({offset: -60, scrollDuration: 200})
+import './styles/default.css';
+import './styles/burger-menu.css';
 
 class App extends React.Component {
+  // constructor(props) {
+  //   super(props);
+  // }
+
+  componentDidMount() {
+    configureAnchors({offset: -60, scrollDuration: 200});
+    registerServiceWorker();
+  }
+
   render() {
     return (
       <div className="app" id="app">
@@ -29,6 +37,7 @@ class App extends React.Component {
         </Menu>
         <main id="page-wrap">
           <Header />
+          <Spacer />
           <About />
           <Spacer />
           <Skills />
@@ -41,10 +50,10 @@ class App extends React.Component {
         </main>
       </div>
     );
-  }
+  } 
 }
 
 ReactDOM.render(
   <App />
   , document.getElementById('root'));
-registerServiceWorker();
+  

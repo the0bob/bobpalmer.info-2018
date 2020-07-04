@@ -1,6 +1,5 @@
 import React from 'react';
 import ScrollableAnchor from 'react-scrollable-anchor';
-import Constants from '../data/constants.json';
 import { MainOutLinks } from '../BUI/';
 
 export default function() {
@@ -10,7 +9,7 @@ export default function() {
     'width': '100%',
     'height': '100%',
     'backgroundColor': '#333',
-    'background': `url(${Constants.cdnUrl}img/photo_bg-1-1.jpg) no-repeat center center scroll`,
+    'background': `url(/img/header.jpg) no-repeat center center scroll`,
     'WebkitBackgroundSize': 'cover',
     'MozBackgroundSize': 'cover',
     'OBackgroundSize': 'cover',
@@ -19,14 +18,17 @@ export default function() {
   }
   return (
     <ScrollableAnchor id="top">
-      <header className="header" style={style}>
-        <div className="text-vertical-center">
+      <header style={style}>
+        <div className={"content"}>
           <h1>I'm Bob</h1>
           <h3>Full Stack Developer</h3>
           <br />
-          <MainOutLinks color="white" />
+          <MainOutLinks />
           <br />
-          <a href="#about" className="btn btn-dark btn-lg">Learn More</a>
+          <a href="#about" className="btn btn-dark btn-lg">
+            Learn More
+            <span className="m-1 fa fa-angle-down"></span>
+          </a>
         </div>
       </header>
     </ScrollableAnchor>

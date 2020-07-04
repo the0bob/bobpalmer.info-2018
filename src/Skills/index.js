@@ -1,7 +1,30 @@
 import React from 'react';
 import ScrollableAnchor from 'react-scrollable-anchor';
-import skillsObj from '../data/skills.json';
-import SkillGroups from './SkillGroups';
+import { skills } from '../data/skills.json';
+
+function SkillGroup({faIcon, name, items}) {
+  const favIconClasses = `${faIcon} fa-stack-1x`;
+  return (
+    <div className="col-lg-2 col-md-4 col-sm-4 col-xs-6">
+      <div className="skill">
+        <span className="fa-stack fa-4x">
+          <i className="fa fa-circle fa-stack-2x"></i>
+          <i className={favIconClasses} style={{
+            color: '#007bff',
+          }}></i>
+        </span>
+        <h4>
+          <strong>{name}</strong>
+        </h4>
+        <ul>
+          {items.map((skill, index) => (
+            <li key={index}>{skill}</li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  );
+}
 
 export default function() {
   return (
@@ -12,7 +35,11 @@ export default function() {
             <div className="col-lg-12 mx-auto">
               <h2>Skills </h2>
               <hr className="small" />
-              <SkillGroups {...skillsObj}/>
+              <div className="row">
+                {skills.map((skillGroup, index) => (
+                  <SkillGroup key={index} {...skillGroup}/>
+                ))}
+              </div>
             </div>
           </div>
         </div>

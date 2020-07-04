@@ -1,4 +1,5 @@
 import React from 'react';
+import {Alert} from 'reactstrap'
 import axios from 'axios';
 import ScrollableAnchor from 'react-scrollable-anchor';
 
@@ -6,14 +7,34 @@ export default class Contact extends React.Component {
   constructor() {
     super();
     this.submitForm = this.submitForm.bind(this);
+    this.Alerts = this.Alerts.bind(this);
     this.ContactForm = this.ContactForm.bind(this);
+    this.ThankYou = this.ThankYou.bind(this);
+    this.addAlert = this.addAlert.bind(this);
     this.state = {
       formSubmitted: false,
       formDisabled: false,
       formData: {},
+      alerts: []
     };
   }
-  async submitForm(event) {
+
+  handleError(error){
+    this.addAlert({content: error.message, color: error})
+  }
+
+  addAlert({color = 'info', content=''}) { const alerts = this.state.alerts;
+    if (content) {
+      alerts.push({color, content});
+      this.setState({alerts});
+    }
+  }
+
+
+  dismissAlert(i){
+
+  }
+  async submitForm(event) { try {
     this.setState({...this.state, formDisabled: true});
     this.forceUpdate();
     event.preventDefault();
@@ -33,47 +54,56 @@ export default class Contact extends React.Component {
     this.setState({...this.state, formSubmitted: true});
     this.forceUpdate();
     return response;
+  } catch(error) { this.handleError(error) }}
+
+  Alerts() {              
+    return this.state.alerts.map(({color='info', content=''}, idx)=>
+      <Alert key={idx} color={color}>
+        {content}
+      </Alert>
+    )
+  }
+  
+
+  ContactForm() {
+    return (
+      <div className="col-lg-6 col-md-8 col-sm-10 mx-auto text-center">
+        <h2>Contact Me</h2>
+        <hr className="small" />
+        <form className="mx-auto text-center" onSubmit={this.submitForm}>
+          <div className="row">
+            <div className="col-md-5">
+              <p>
+                <input type="text" name="name" placeholder="Name" required/>
+              </p><p>
+                <input type="email" name="email" placeholder="Email" required/>
+              </p><p>
+                <input type="phone" name="phone" placeholder="Phone (optional)"/>
+              </p>
+            </div>
+            <div className="col-md-7">
+              <textarea name="comments" cols="40" rows="5" placeholder="What's on your mind?" required></textarea>
+            </div>
+            <div className="clearfix"></div>
+            <div className="col-md-12 text-right">
+              <input type="submit" value="Submit" disabled={this.formDisabled} />
+            </div>
+          </div>
+        </form>
+      </div>
+    );
   }
 
-  ContactForm(props) {
-    if(!props.formSubmitted) {
-      return (
-        <div className="col-lg-6 col-md-8 col-sm-10 mx-auto text-center">
-          <h2>Contact Me</h2>
-          <hr className="small" />
-          <form className="mx-auto text-center" onSubmit={this.submitForm}>
-            <div className="row">
-              <div className="col-md-5">
-                <p>
-                  <input type="text" name="name" placeholder="Name" required/>
-                </p><p>
-                  <input type="email" name="email" placeholder="Email" required/>
-                </p><p>
-                  <input type="phone" name="phone" placeholder="Phone (optional)"/>
-                </p>
-              </div>
-              <div className="col-md-7">
-                <textarea name="comments" cols="40" rows="5" placeholder="What's on your mind?" required></textarea>
-              </div>
-              <div className="clearfix"></div>
-              <div className="col-md-12 text-right">
-                <input type="submit" value="Submit" disabled={this.formDisabled} />
-              </div>
-            </div>
-          </form>
-        </div>
-      );
-    } else {
-      return (
-        <div className="col-lg-6 col-md-8 col-sm-10 mx-auto text-center">
-          <h2>Thank You!</h2>
-          <hr className="small" />
-          <p>
-            Your message has been sent!
-          </p>
-        </div>
-      );
-    }
+  ThankYou() {
+    return (
+      <div className="col-lg-6 col-md-8 col-sm-10 mx-auto text-center">
+        <h2>Thank You!</h2>
+        <hr className="small" />
+        <p>
+          Your message has been sent!
+        </p>
+      </div>
+    );
   }
 
   render() {
@@ -82,7 +112,12 @@ export default class Contact extends React.Component {
         <section className="contact">
           <div className="container">
             <div className="row">
-              <this.ContactForm formSubmitted={this.state.formSubmitted} />
+              <this.Alerts />
+              {!this.state.formSubmitted
+                ? <this.ContactForm />
+                : <this.ThankYou />
+              }
+              
             </div>
           </div>
         </section>

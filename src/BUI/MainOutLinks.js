@@ -1,9 +1,8 @@
 import React from 'react';
 import OutLink from './OutLink';
 
-export default function(props) {
-  let style = {};
-  if (props.color) { style.color = props.color };
+export default function({color}) {
+  let style = { color };
   return(
     <ul className="list-inline">
       <li className="list-inline-item">

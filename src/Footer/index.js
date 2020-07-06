@@ -11,7 +11,9 @@ export default function() {
             <div className="col-lg-10 mx-auto text-center">
               <MainOutLinks />
               <hr className="small" />
-              <p className="text-muted">Copyright &copy; Bob Jobs, LLC 2017</p>
+              <p>
+                This website was built with React, Bootstrap, and Gatsby. The DNS is hosted on Amazon Route 53, the app itself and deployment is hosted by Heroku, and source control is hosted by GitHub.
+              </p>
             </div>
           </div>
         </div>

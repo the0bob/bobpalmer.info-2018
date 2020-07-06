@@ -1,20 +1,21 @@
 import React from 'react';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import { MainOutLinks } from '../BUI/';
+import "./styles.css";
 
 export default function() {
   const style={
-    'position': 'relative',
-    'display': 'table',
-    'width': '100%',
-    'height': '100%',
-    'backgroundColor': '#333',
-    'background': `url(/img/header.jpg) no-repeat center center scroll`,
-    'WebkitBackgroundSize': 'cover',
-    'MozBackgroundSize': 'cover',
-    'OBackgroundSize': 'cover',
-    'backgroundSize': 'cover',
-    'backgroundAttachment': 'fixed',
+    position: 'relative',
+    display: 'table',
+    width: '100%',
+    height: '100%',
+    backgroundColor: '#333',
+    background: 'url(/img/header.jpg) no-repeat center center scroll',
+    WebkitBackgroundSize: 'cover',
+    MozBackgroundSize: 'cover',
+    OBackgroundSize: 'cover',
+    backgroundSize: 'cover',
+    backgroundAttachment: 'fixed',
   }
   return (
     <ScrollableAnchor id="top">

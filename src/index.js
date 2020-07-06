@@ -4,13 +4,13 @@ import { stack as Menu } from 'react-burger-menu';
 import { configureAnchors } from 'react-scrollable-anchor'
 
 import registerServiceWorker from './registerServiceWorker';
-import { Spacer } from './BUI/';
-import Header from './Header/';
-import About from './About/';
-import Skills from './Skills/';
-import Portfolio from './Portfolio/';
-import Contact from './Contact/';
-import Footer from './Footer/';
+import { Spacer } from './components/BUI/';
+import Header from './components/Header/';
+import About from './components/About/';
+import Skills from './components/Skills/';
+import Portfolio from './components/Portfolio/';
+import Contact from './components/Contact/';
+import Footer from './components/Footer/';
 
 import './styles/default.css';
 import './styles/burger-menu.css';

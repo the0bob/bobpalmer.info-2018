@@ -1,0 +1,19 @@
+/* Skills */
+.skills {
+  padding: 50px 0;
+  background-color: #cdc;
+}
+
+.skills h2{
+color: rgb(33, 37, 41);
+}
+
+.skill {
+  margin-bottom: 30px;
+  color: #000;
+}
+.skill ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}

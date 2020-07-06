@@ -3,6 +3,8 @@ import {Alert} from 'reactstrap'
 import axios from 'axios';
 import ScrollableAnchor from 'react-scrollable-anchor';
 
+import "./styles.css";
+
 export default class Contact extends React.Component {
   constructor() {
     super();
@@ -36,7 +38,7 @@ export default class Contact extends React.Component {
   }
   
   async submitForm(event) { try {
-    this.setState({...this.state, formDisabled: true});
+    this.setState({formDisabled: true});
     this.forceUpdate();
     event.preventDefault();
     const data = new FormData(event.target);
@@ -52,7 +54,7 @@ export default class Contact extends React.Component {
       data: formData,
       headers: {'Content-Type': 'application/x-www-form-urlencoded'},
     }).then(response => {
-      this.setState({...this.state, formSubmitted: true});
+      this.setState({formSubmitted: true});
       this.forceUpdate();
       return response;
     });
@@ -111,13 +113,14 @@ export default class Contact extends React.Component {
   }
 
   render() {
+    const { formSubmitted = false } = this.state;
     return (
       <ScrollableAnchor id="contact">
         <section className="contact">
           <div className="container">
             <div className="row">
               <this.Alerts />
-              {!this.state.formSubmitted
+              {!formSubmitted
                 ? <this.ContactForm />
                 : <this.ThankYou />
               }

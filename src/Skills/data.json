@@ -5,8 +5,8 @@
          "name":"Languages",
          "items":[
             "Node.js",
-            "PHP",
             "Java",
+            "PHP",
             "C++"
          ]
       },
@@ -15,45 +15,28 @@
          "name":"Stacks",
          "items":[
             "MERN",
+            "SpringBoot",
             "LAMP",
-            ".NET",
-            "SpringBoot"
-         ]
-      },
-      {
-         "faIcon":"fas fa-tasks",
-         "name":"Automation",
-         "items":[
-            "Backups",
-            "Data Feeds",
-            "Cron Jobs"
-         ]
-      },
-      {
-         "faIcon":"fas fa-puzzle-piece",
-         "name":"Integration",
-         "items":[
-            "APIs",
-            "Micro-services",
-            "Mutation & Validation"
-         ]
-      },
-      {
-         "faIcon":"fas fa-database",
-         "name":"Data Structs",
-         "items":[
-            "SQL",
-            "NoSQL",
-            "XML"
+            ".NET"
          ]
       },
       {
          "faIcon":"fas fa-code-branch",
-         "name":"Other Skills",
+         "name":"Workflow",
          "items":[
-            "Git / Gitlab",
-            "Bootstrap",
-            "SEO / SMO"
+            "Build Processes",
+            "Pipelines",
+            "Error Reporting",
+            "Git | Version Control"
+         ]
+      },
+      {
+         "faIcon":"fas fa-database",
+         "name":"Database",
+         "items":[
+            "Postgres",
+            "MySql",
+            "MongoDB"
          ]
       }
    ]

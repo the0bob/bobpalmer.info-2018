@@ -2,6 +2,8 @@ import React from 'react';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import { OutLink, CtaButton } from '../BUI/';
 
+import "./styles.css";
+
 export default function() {
   return (
     <ScrollableAnchor id="about">

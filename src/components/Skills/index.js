@@ -2,6 +2,8 @@ import React from 'react';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import { skills } from './data.json';
 
+import "./styles.css";
+
 function SkillGroup({faIcon, name, items}) {
   const favIconClasses = `${faIcon} fa-stack-1x`;
   return (

@@ -4,19 +4,29 @@
       "title": "Resume",
       "img": "/img/resume.jpg",
       "copy": "<p>It's a resume; not too much to explain here. If you're curious about my work history or just need a piece of paper to keep on file, this is what you are looking for. </p>",
-      "link": "/downloads/bob-palmer-resume.pdf"
+      "link": "/downloads/bob-palmer-resume.pdf",
+      "cta": "Download"
+    },
+    {
+      "title": "Mushrooms & Mysteries",
+      "img": "/img/mushrooms-and-mysteries.jpg",
+      "copy": "<p>My current RPG Maker Project. I use this primarily for testing plugins. No plot, just mushrooms.</p>",
+      "link":"https://mushrooms-and-mysteries.bobpalmer.info/",
+      "cta": "Play"
     },
     {
       "title": "GitHub",
       "img": "/img/github.jpg",
-      "copy": "<p>Source code for my most recent projects can be found here, including this website (React), the Kansas City Food Not Bombs website (Angular), a Terraria game server (Docker), and a WIP game made with RPG Maker MV (Pixi.js).</p>",
-      "link": "https://github.com/the0bob"
+      "copy": "<p>Source code for my most recent projects can be found here, including this website (React), the Kansas City Food Not Bombs website (Angular), a Terraria game server (Docker), and a few other small projects.</p>",
+      "link": "https://github.com/the0bob",
+      "cta": "View"
     },
     {
       "title": "CodePen",
       "img": "/img/codepen.jpg",
       "copy": "<p>A few items from when I was first getting the hang of modern web development. Notable items are an API-based weather widget and a pure JavaScript modal image viewer rendered in a canvas with zoom functionality.</p>",
-      "link": "https://codepen.io/the0bob/"
+      "link": "https://codepen.io/the0bob/",
+      "cta": "View"
     }
   ],
   "settings": {

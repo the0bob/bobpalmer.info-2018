@@ -5,7 +5,7 @@ import { skills } from './data.json';
 function SkillGroup({faIcon, name, items}) {
   const favIconClasses = `${faIcon} fa-stack-1x`;
   return (
-    <div className="col-lg-2 col-md-4 col-sm-4 col-xs-6">
+    <div className="col-lg-3 col-md-3 col-sm-6 col-xs-6">
       <div className="skill">
         <span className="fa-stack fa-4x">
           <i className="fa fa-circle fa-stack-2x"></i>

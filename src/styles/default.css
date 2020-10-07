@@ -8,7 +8,7 @@
 /* Global Styles */
 @font-face {
   font-family: 'kingthings-extortion';
-  src: local('Kingthings Extortion'), local('kingthings-extortion'), url(https://s3.us-east-2.amazonaws.com/bob-palmer-website/fonts/kingthings-extortion.ttf) format('ttf');
+  src: local('Kingthings Extortion'), local('kingthings-extortion'), url(https://s3.amazonaws.com/www.bobpalmer.info/fonts/kingthings-extortion.ttf) format('ttf');
 }
 
 html, body, #root, .app, #page-wrap {

@@ -1,7 +1,7 @@
 import React from 'react';
 import Slider from "react-slick";
 import ScrollableAnchor from 'react-scrollable-anchor';
-import { OutLink } from '../BUI/';
+import { OutLink } from '../BUI';
 import data from './data.json';
 
 import "./styles.css";

@@ -1,6 +1,6 @@
 import React from 'react';
 import ScrollableAnchor from 'react-scrollable-anchor';
-import { MainOutLinks } from '../BUI/'
+import { MainOutLinks } from '../BUI'
 
 import "./styles.css";
 

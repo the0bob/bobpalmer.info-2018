@@ -1,6 +1,6 @@
 import React from 'react';
 import ScrollableAnchor from 'react-scrollable-anchor';
-import { OutLink, CtaButton } from '../BUI/';
+import { OutLink, CtaButton } from '../BUI';
 
 import "./styles.css";
 
@@ -11,7 +11,7 @@ export default function() {
         <div className="container text-center">
           <div className="row">
             <div className="col-md-4">
-              <img className="about-image" src="/img/profile.jpg" alt="Bob Palmer" />
+              <img className="about-image" src="https://s3.amazonaws.com/www.bobpalmer.info/img/profile.jpg" alt="Bob Palmer" />
             </div>
             <div className="col-md-8">
               <div>

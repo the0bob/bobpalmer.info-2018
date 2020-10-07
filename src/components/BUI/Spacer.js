@@ -4,7 +4,7 @@ import React from 'react';
 
 export default function({children}) {
   const style={
-    background: "url(/img/background.jpg) no-repeat center center scroll",
+    background: "url(https://s3.amazonaws.com/www.bobpalmer.info/img/background.jpg) no-repeat center center scroll",
     backgroundSize: "cover",
     backgroundAttachment: "fixed",/* Call to Action */
     padding: "50px 0",

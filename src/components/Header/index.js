@@ -1,6 +1,6 @@
 import React from 'react';
 import ScrollableAnchor from 'react-scrollable-anchor';
-import { MainOutLinks } from '../BUI/';
+import { MainOutLinks } from '../BUI';
 import "./styles.css";
 
 export default function() {
@@ -10,7 +10,7 @@ export default function() {
     width: '100%',
     height: '100%',
     backgroundColor: '#333',
-    background: 'url(/img/header.jpg) no-repeat center center scroll',
+    background: 'url(https://s3.amazonaws.com/www.bobpalmer.info/img/header.jpg) no-repeat center center scroll',
     WebkitBackgroundSize: 'cover',
     MozBackgroundSize: 'cover',
     OBackgroundSize: 'cover',
